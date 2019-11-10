@@ -64,16 +64,18 @@ body {
     position: absolute;
     right: 0px;
     top: 5px;
+    transition: 1s;
 }
 #dados{
     width: calc(100% - 130px);
     height: 100%;
 }
 #dados label{
+    float: center;
     width: 100%;
-    height: 20px;
     font-size: 16px;
     font-weight: normal;
+    transition: 1s;
 }
 #cabecalho_I label{
     position: absolute;
@@ -182,8 +184,31 @@ body {
         left: 10%;
     }
 }
+
+@media(max-width: 550px){
+    #dados label{
+        float: left;
+        font-size: 14px;
+        transition: 1s;
+    }
+    #cabecalho_I label{
+        text-align: left;
+    }
+}
+@media(max-width: 500px){
+    #rodape{
+        height: 80px;
+        transition: 1s;
+    }
+    #rodape_I img{
+        top: 15px;
+        transition: 1s;
+    }
+
+}
 @media(max-height: 654px){
     #rodape{
         top: 600px;
     }
+
 }
