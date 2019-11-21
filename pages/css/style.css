@@ -1,0 +1,418 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;}
+.txt-rt{text-align:right;}
+.txt-lt{text-align:left;}
+.txt-center{text-align:center;}
+.float-rt{float:right;}
+.float-lt{float:left;}
+.clear{clear:both;}
+.pos-relative{position:relative;}
+.pos-absolute{position:absolute;}
+.vertical-base{	vertical-align:baseline;}
+.vertical-top{	vertical-align:top;}
+nav.vertical ul li{	display:block;}
+nav.horizontal ul li{	display: inline-block;}
+img{max-width:100%;}
+
+body {
+    background-color: #fff;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+	height: 100%;
+    z-index: 0;
+}
+#cabecalho{
+    width: 100%;
+    height: 102px;
+    background-color: #2c2c2c;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 2px solid #A9A9A9;
+    z-index: 3;
+
+}
+#rodape{
+    width: 100%;
+    height: 52px;
+    background-color: #2c2c2c;
+    position: absolute;
+    top: calc(100% - 52px);
+    left: 0px;
+    border-top: 2px solid #A9A9A9;
+}
+#cabecalho_I, #rodape_I{
+    width: 1090px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 545px);
+    color: #fff;
+}
+#rodape_I img{
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    transition: 1s;
+}
+#dados{
+    width: calc(100% - 130px);
+    height: 100%;
+}
+#dados label{
+    float: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    transition: 1s;
+}
+#cabecalho_I label{
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#cabecalho_I img{
+    position: absolute;
+    left: 0px;
+
+}
+#page-home{
+    width: 1090px;
+    height: calc(100% - 154px);
+    min-height: 500px;
+    position: absolute;
+    top:102px;
+    left: calc(50% - 545px);
+}
+#page-scrum{
+    width: 100%;
+    height: calc(100% - 154px);
+    min-height: 600px;
+    position: absolute;
+    top:102px;
+    left: 0px;
+}
+#page-dsdm{
+    width: 100%;
+    height: 1750px;
+    min-height: 600px;
+    position: absolute;
+    top:102px;
+    left: 0px;
+}
+#page-fdd{
+    width: 100%;
+    height: 1750px;
+    min-height: 600px;
+    position: absolute;
+    top:102px;
+    left: 0px;
+}
+#page-home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#titulo{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top:20px;
+    color: #008080;
+    font-size: 30px;
+    z-index: 2;
+    text-shadow: 2px 2px 2px #2c2c2c;
+    box-shadow: 1px 1px 2px 1px rgba(255,255,255,0.4);
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(255,255,255,0.4);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(255,255,255,0.4);
+}
+#alunos{
+    width: 260px;
+    height: 120px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+#alunos label{
+    width: 100%;
+    height: 20px;
+    float: left;
+    z-index: 2;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px 2px #2c2c2c;
+}
+#menu{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 15px;  
+    z-index: 3;
+}
+#menu:hover{
+    background-color: rgb(0,0,0,0.8);
+}
+
+#menu_options{
+    margin-top: 8px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#menu_options a{
+    margin-top: 5px;
+    text-align: left;
+    width: 290px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    left:10px;
+    font-weight: normal;
+    background-color: transparent;
+    border: none;
+    float: left;
+}
+#menu_options a:hover{
+    text-decoration: underline;
+    color:#FF4500;
+}
+#page-scrum p{
+    width: 1090px;
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    left: calc(50% - 545px);
+    top: 70px;
+    text-align: justify;
+    text-indent: 3em;
+}
+#page-dsdm p, #page-fdd p{
+    width: 1090px;
+    font-size: 12px;
+    margin-top: 5px;
+    position: relative;
+    left: calc(50% - 545px);
+    top: 70px;
+    text-align: justify;
+    text-indent: 3em;
+    font-weight: normal;
+
+}#page-scrum h1, #page-scrum h2 {
+    width: 1090px;
+    text-indent: 2.3em;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    left: calc(50% - 545px);
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+#page-dsdm h1, #page-dsdm h2, #page-fdd h1, #page-fdd h2{
+    width: 1090px;
+    text-indent: 2.3em;
+    text-align: left;
+    position: relative;
+    top: 70px;
+    left: calc(50% - 545px);
+    font-weight: bold;
+    margin-top: 30px;
+}
+#page-scrum a label, #page-dsdm a label, #page-fdd a label{
+
+    width: 1090px; 
+    text-indent: 3em;
+    position: relative;
+
+    top: 70px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+#page-scrum a label:hover, #page-dsdm a label:hover, #page-fdd a label:hover{
+    text-decoration: underline;  
+}
+#imgFDD{
+    position: relative;
+    top: 70px;
+    margin-top: 30px;
+}
+#imgdsdm{
+    position: relative;
+    top: 70px;
+    margin-top: 30px;
+}
+
+
+@media(max-width: 1090px){
+    #cabecalho_I, #rodape_I{
+        width: 80%;
+        left: 10%;
+    }
+    #page-home{
+        width: 100%;
+        left: 0px;
+    }
+    #page-scrum{
+        height: 700px;
+        left: 0px;
+    }
+    #page-scrum p{
+        width: 80%;
+        left: 10%;
+    }
+    #page-scrum h1, #page-scrum h2  {
+        width: 80%;
+        left: 10%;
+    }
+    #page-dsdm{
+        height: 1850px;
+        left: 0px;
+    }
+    #page-dsdm p{
+        width: 80%;
+        left: 10%;
+    }
+    #page-dsdm h1, #page-dsdm h2  {
+        width: 80%;
+        left: 10%;
+    }
+    #page-fdd{
+        height: 2000px;
+        left: 0px;
+    }
+    #page-fdd p{
+        width: 80%;
+        left: 10%;
+    }
+    #page-fdd h1, #page-fdd h2  {
+        width: 80%;
+        left: 10%;
+    }
+    #page-xg{
+        height: 1230px;
+        left: 0px;
+    }
+    #page-xg p{
+        width: 80%;
+        left: 10%;
+    }
+    #page-xg h1, #page-xg h2  {
+        width: 80%;
+        left: 10%;
+    }
+}
+@media(max-width: 860px){
+    #page-scrum{
+        height: 800px;
+        left: 0px;
+    }
+    #page-dsdm{
+        height: 1870px;
+        left: 0px;
+    } 
+    #page-fdd{
+        height: 2200px;
+        left: 0px;           
+    }   
+}
+@media(max-width: 700px){
+    #page-scrum{
+        height: 900px;
+        left: 0px;
+    } 
+    #page-dsdm{
+        height: 2000px;
+        left: 0px;           
+    }  
+    #page-fdd{
+        height: 2450px;
+        left: 0px;           
+    } 
+}
+
+
+@media(max-width: 550px){
+    #dados label{
+        float: left;
+        font-size: 14px;
+        transition: 1s;
+    }
+    #cabecalho_I label{
+        text-align: left;
+    }
+    #page-scrum{
+        height: 1000px;
+        left: 0px;
+    } 
+    #page-dsdm{
+        height: 2100px;
+        left: 0px;
+    }
+    #page-fdd{
+        height: 2570px;
+        left: 0px;           
+    }  
+
+}
+@media(max-width: 500px){
+    #rodape{
+        height: 80px;
+        transition: 1s;
+    }
+    #rodape_I img{
+        top: 15px;
+        transition: 1s;
+    }
+    #page-dsdm{
+        height: 2150px;
+        left: 0px;
+    }
+    #page-fdd{
+        height: 2900px;
+        left: 0px;           
+    } 
+
+
+}
+@media(max-width: 476px){
+    #page-scrum{
+        height: 1100px;
+        left: 0px;
+    }
+    #page-dsdm{
+        height: 2200px;
+    }
+
+
+}
+@media(max-height: 654px){
+    #rodape{
+        top: 600px;
+    }
+
+}
