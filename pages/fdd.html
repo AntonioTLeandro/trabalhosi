@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR" class="js">
+<head>
+    <title>Trabalho SI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Type:" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    
+</head>
+    <body>
+        <div id="cabecalho">
+            <div id="cabecalho_I">
+                <img src="../Imagens/logo.png" />
+                <label>Sistemas de Informação</label>
+                <div id="menu">Menu
+                    <div id="menu_options">
+                        <a id="home" href="../index.html">Home</a>
+                        <a id="fdp" href="fdd.html">Feature Driven Development</a>
+                        <a id="xg" href="xg.html">Extreme Programming</a>
+                        <a id="msf" href="msf.html">Microsoft Solutions Framework</a>
+                        <a id="dsdm" href="dsdm.html">Dynamic System Development Model</a>
+                        <a id="scrum" href="scrum.html">SCRUM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-fdd">
+            <label id="titulo">Feature Driven Development</label> 
+            <p>Entre as metodologias ágeis que existiam antes do manifesto ágil, o FDD “Feature Driven Development” é uma delas. Concebido originalmente por Jeff de Luca, o FDD surgiu em Singapura, entre os anos de 1997 e 1999 com base no método Coad (Criado por Peter Coad – 1980/1990) e nos processos interativos e lean já utilizados por Jeff de Luca.</p>     
+            <p>O FDD busca o desenvolvimento por funcionalidade, ou seja, por um requisito funcional do sistema. É prático para o trabalho com projetos iniciais ou projetos com codificações existentes. Apesar de ter algumas diferenças entre o FDD e o XP, é possível utilizar as melhores práticas de cada metodologia. O FDD atua muito bem em conjunto com o Scrum, pois o Scrum atua no foco do gerenciamento do projeto e o FDD atua no processo de desenvolvimento.</p> 
+            <p>O FDD possui cinco processos básicos.</p> 
+            <p>1 - Desenvolvimento de modelo abrangente (Análise orientada por objetos);</p> 
+            <p>2 - Construção de lista de funcionalidades (Decomposição funcional);</p> 
+            <p>3 - Planejar por funcionalidade (Planejamento incremental);</p> 
+            <p>4 - Detalhe por funcionalidade (Desenho orientado a objetos);</p>    
+            <p>5 - Construção por funcionalidade (Programação e teste orientado a objetos).</p> 
+            <p>Assim como acontece na metodologia XP, o FDD faz uso de teste de software. Desta forma é possível utilizar TDD, aliás, é indicada a utilização deste para manter a qualidade do software.</p> 
+            <p>O FDD, assim como a teoria de sistemas afirma, entende que a soma das partes é maior do que o todo. Desta forma, apesar de criar um modelo abrangente baseado no todo que será desenvolvido, esta fase inicia-se com o detalhamento do domínio do negócio com divisão de áreas que serão modeladas. O modelo só está pronto quando todos da equipe estiverem de acordo, o planejamento é feito com base na lista de funcionalidades. Se fossemos trabalhar com FDD em conjunto com o Scrum, a lista de funcionalidades seria utilizada no backlog de produtos, como histórias de usuários a serem desenvolvidas.</p> 
+            <p>Com base na lista de funcionalidades, deve-se planejar por funcionalidade, mas este planejamento é incremental. Isto em conjunto com o Scrum, deve ser analisado como etapa de desenvolvimento do incremento, então este planejamento é feito com base no que será desenvolvido naquele incremento.</p> 
+            <p>Vamos novamente ao Scrum, separando o que será feito na Sprint. Colocamos no backlog da Sprint. O que está no backlog da sprint são funcionalidades que serão desenvolvidas durante a sprint (que pode ser de duas a quatro semanas), estas tarefas são então planejadas com maior rigor, neste ponto, temos então o planejamento incremental, ou seja, planejamos apenas o que vamos desenvolver. Nesta etapa os envolvidos no processo resumem-se apenas à equipe, ou seja, os desenvolvedores, analistas, testadores, etc., que vão atuar no processo. Eles devem selecionar os itens com base no tempo que eles possuem e nas qualificações atuais da equipe.</p> 
+            <p>Após o planejamento, é feito o detalhamento, nesta fase é de extrema importância que o desenho esteja de acordo com o que o cliente deseja, então é mantido contato constante com o cliente, como em todas as metodologias ágeis.</p> 
+            <p>Esta documentação é a base para o desenvolvimento, não deve-se perder tempo com documentação que não será utilizada, mas é necessário documentar.</p> 
+            <p>Posteriormente inicia-se a fase de desenvolvimento, esta fase é a etapa de desenvolvimento e teste real.</p>
+            <p>O desenvolvimento também é incremental, e indica-se a utilização de testes do início ao fim do processo, além da utilização de integração contínua.</p> 
+            <p>Um ponto que diverge do XP é que no FDD é incentivado o desenvolvedor como único responsável pelo módulo que este desenvolve, já no XP, o código é comunitário.</p> 
+            <h1>Integração contínua</h1>
+            <img id="imgFDD" src="../Imagens/fdd.jpg" />
+
+            <p>A utilização da integração contínua permite que a equipe esteja em contato constante com o cliente, tornando o processo ágil e com entregas constantes.</p> 
+            <p>Como cada fase apresentada acima é específica e curta, e as fases se completam, são necessários relatórios para manter o controle, para analisar a quantidade de recursos que estão sendo desenvolvidos, semelhante ao burndow e o burnup do Scrum</p> 
+            <p>Segundo a metodologia, o percentual de tempo gasto em cada etapa é:</p> 
+            <p>●    Levantamento do domínio da aplicação = 1%;</p> 
+            <p>●    Projeto = 40%;</p> 
+            <p>●    Inspeção do projeto = 3%;</p> 
+            <p>●    Inspeção do código = 10%;</p> 
+            <p>●    Integração = 1%.</p> 
+            <p>Além disso, o FDD possui as chamadas melhores práticas que indicam boas práticas ao desenvolver com o FDD, são elas:</p> 
+            <p>●    Modelagem Orientada a Objetos do Domínio;</p> 
+            <p>●    Desenvolvimento por funcionalidade;</p> 
+            <p>●    Classe proprietária, ou seja, a unidade é feita individualmente, evitando-se assim conflitos na equipe;</p> 
+            <p>●    Equipes de recursos: são equipes pequenas, destinadas a desenvolver recursos necessários ao projeto, de forma secundária;</p> 
+            <p>●    Inspeção é realizada constantemente para garantir a boa qualidade do código e do projeto;</p> 
+            <p>●    Gerenciamento de configuração;</p> 
+            <p>●    Integração contínua para demonstrar constantemente às funcionalidades ao cliente e;</p> 
+            <p>●    Visibilidade de progressos e resultados.</p> 
+            <p>Existem ferramentas que facilitam o desenvolvimento utilizando FDD, uma delas, livre é a FDDTools.</p> 
+            <p>É possível notar como o FDD pode atuar em conjunto com outras metodologias, principalmente com o Scrum, encaixando-se perfeitamente como metodologia de engenharia ágil de software com projeto ágil de software.</p> 
+            <p>Além disso, é possível notar que as boas práticas do FDD podem entrar em embate com o XP, na forma em que o código é tratado por cada uma das metodologias. Lembrando que as metodologias possuem características que podem ser adaptadas à necessidade de cada empresa, se notarmos o foco principal em todas as metodologias, temos o desenvolvimento por incremento, a comunicação constante com o cliente e a integração contínua.</p> 
+            <h2 style="text-align: center">Pergunta</h2>
+            <p style="text-align: center"></p>
+            <h2 style="text-align: center" >Referências Bibliográficas</h2>   
+            <a style="text-align: center" href="http://www.devmedia.com.br/uma-visao-geral-sobre-metodologia-agil/27944"><label>www.devmedia.com.br</label></a>
+            <a style="text-align: center" href="http://www.featuredrivendevelopment.com"><label>www.featuredrivendevelopment.com</label></a>
+            <a style="text-align: center" href="http://www.heptagon.com.br/fdd, acessado em maio de 2013"><label>www.heptagon.com.br</label></a>
+            <a style="text-align: center" href="http://www.linhadecodigo.com.br/artigo/1252/dividir-conquistar-e-integrar-conceitos-de-integracao-continua-para-testadores-ageis.aspx."><label>www.linhadecodigo.com.br</label></a>
+            <a style="text-align: center" href="http://fddtools.sourceforge.net/."><label>fddtools.sourceforge.net</label></a>
+
+            <div id="rodape" style="top: 100%">
+                <div id="rodape_I" >
+                    <a href="http://www.faculdadedelta.edu.br/"><img src="../Imagens/logoDelta.png" /></a>
+                    <div id="dados">
+                        <label>&copy Copyright 2019 - Trabalho Acadêmico</label>
+                        <label>Professor: Andre Luiz Gonçalves Campos</label>
+                    </div>
+                </div>
+            </div>  
+        </div> 
+        </div>
+        
+    </body>
+     <script src="../js/functions.js"></script>
+    <script>
+        $("#fdp").css({"color":"#FF4500"}) 
+    </script>
+</html>
