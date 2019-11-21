@@ -278,7 +278,7 @@ body {
         left: 0px;
     }
     #page-scrum{
-        height: 700px;
+        height: 850px;
         left: 0px;
     }
     #page-scrum p{
@@ -328,7 +328,7 @@ body {
 }
 @media(max-width: 860px){
     #page-scrum{
-        height: 800px;
+        height: 950px;
         left: 0px;
     }
     #page-dsdm{
@@ -342,7 +342,7 @@ body {
 }
 @media(max-width: 700px){
     #page-scrum{
-        height: 900px;
+        height: 1000px;
         left: 0px;
     } 
     #page-dsdm{
@@ -366,7 +366,7 @@ body {
         text-align: left;
     }
     #page-scrum{
-        height: 1000px;
+        height: 1100px;
         left: 0px;
     } 
     #page-dsdm{
@@ -374,7 +374,7 @@ body {
         left: 0px;
     }
     #page-fdd{
-        height: 2570px;
+        height: 2670px;
         left: 0px;           
     }  
 
@@ -401,12 +401,16 @@ body {
 }
 @media(max-width: 476px){
     #page-scrum{
-        height: 1100px;
+        height: 1300px;
         left: 0px;
     }
     #page-dsdm{
         height: 2200px;
     }
+    #page-fdd{
+        height: 3300px;
+        left: 0px;           
+    } 
 
 
 }
