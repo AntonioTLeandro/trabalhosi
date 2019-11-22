@@ -30,9 +30,26 @@
                 </div>
             </div>
         </div>
-        <div id="page-scrum">
-            <label id="titulo" style="top: -5px;">Microsoft Solutions Framework</label>         
+        <div id="page-msf">
+            <label id="titulo" style="top: -5px;">Microsoft Solutions Framework</label>  
+            <img id="imgMsf" src="../Imagens/msf.png" />     
+                <div id="options">
+                    <button onclick="mudarConteudo(event, 'mudar1')">Microsoft Solutions Framework</button>
+                    <button onclick="mudarConteudo(event, 'mudar2')">Principais Elementos do MSF</button>
+                    <button onclick="mudarConteudo(event, 'mudar3')">Princípios fundamentais e as mentalidades do MSF</button>
+                    <button onclick="mudarConteudo(event, 'mudar4')">Princípios fundamentais</button>
+                    <button onclick="mudarConteudo(event, 'mudar5')">Mentalidades</button>
+                    <button onclick="mudarConteudo(event, 'mudar6')">O Modelo de Equipe do MSF</button>
+                    <button onclick="mudarConteudo(event, 'mudar7')">O Modelo de Governança do MSF</button>
+                    <button onclick="mudarConteudo(event, 'mudar8')">Trilhas</button>
+                    <button onclick="mudarConteudo(event, 'mudar9')">Trilha de Governança</button>
+                    <button onclick="mudarConteudo(event, 'mudar10')">Trilhas de Aprovação</button>
+                    <button onclick="mudarConteudo(event, 'mudar11')">Pontos de verificação</button>
+                    <button onclick="mudarConteudo(event, 'mudar12')">Abordagem iterativa</button>
+                    <button onclick="mudarConteudo(event, 'mudar13')">Pergunta / Referências Bibliográficas</button>
+            </div>  
         </div>
+        <div id="conteudo"></div>
         <div id="rodape">
             <div id="rodape_I">
                 <a href="http://www.faculdadedelta.edu.br/"><img src="../Imagens/logoDelta.png" /></a>
@@ -40,11 +57,14 @@
                     <label>&copy Copyright 2019 - Trabalho Acadêmico</label>
                     <label>Professor: Andre Luiz Gonçalves Campos</label>
                 </div>
-            </div>
         </div>         
     </body>
      <script src="../js/functions.js"></script>
     <script>
         $("#msf").css({"color":"#FF4500"})
+        function teste(){
+            $("#imgMsf").css({"top": "calc(50% - " + ($("#imgMsf").css('height').replace("px", "")) / 2 + "px)"})
+        }
+        teste()
     </script>
 </html>

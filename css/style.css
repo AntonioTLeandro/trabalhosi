@@ -98,6 +98,14 @@ body {
     top:102px;
     left: calc(50% - 545px);
 }
+#page-msf{
+    width: 1090px;
+    height: calc(100% - 154px);
+    min-height: 500px;
+    position: absolute;
+    top:102px;
+    left: calc(50% - 545px);
+}
 #page-scrum{
     width: 100%;
     height: calc(100% - 154px);
@@ -118,6 +126,13 @@ body {
     width: 100%;
     height: 1750px;
     min-height: 600px;
+    position: absolute;
+    top:102px;
+    left: 0px;
+}
+#page-xg{
+    width: 100%;
+    height: 1450px;
     position: absolute;
     top:102px;
     left: 0px;
@@ -208,7 +223,7 @@ body {
     text-align: justify;
     text-indent: 3em;
 }
-#page-dsdm p, #page-fdd p{
+#page-dsdm p, #page-fdd p, #page-xg p{
     width: 1090px;
     font-size: 12px;
     margin-top: 5px;
@@ -230,7 +245,7 @@ body {
     margin-top: 30px;
 
 }
-#page-dsdm h1, #page-dsdm h2, #page-fdd h1, #page-fdd h2{
+#page-dsdm h1, #page-dsdm h2, #page-fdd h1, #page-fdd h2, #page-xg h1, #page-xg h2{
     width: 1090px;
     text-indent: 2.3em;
     text-align: left;
@@ -240,7 +255,7 @@ body {
     font-weight: bold;
     margin-top: 30px;
 }
-#page-scrum a label, #page-dsdm a label, #page-fdd a label{
+#page-scrum a label, #page-dsdm a label, #page-fdd a label, #page-xg a label{
 
     width: 1090px; 
     text-indent: 3em;
@@ -253,7 +268,7 @@ body {
 
 }
 
-#page-scrum a label:hover, #page-dsdm a label:hover, #page-fdd a label:hover{
+#page-scrum a label:hover, #page-dsdm a label:hover, #page-fdd a label:hover, #page-fdd a label:hover{
     text-decoration: underline;  
 }
 #imgFDD{
@@ -266,7 +281,170 @@ body {
     top: 70px;
     margin-top: 30px;
 }
+#img1{
+    position: relative;
+    top: 20px;
+    margin-top: 20px;
+}
+#imgMsf{
+    position: relative;
+}
+#options{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+     z-index: 3;
+    background-color:rgb(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+#options button{
+    width: 100%;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    border: none; 
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
 
+
+}
+#options button:hover{
+    text-decoration: underline;
+    color:#FF4500;
+}
+#options button .btn:focus,#conteudo button .btn:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+#options button:focus, #conteudo button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+
+}
+#conteudo button{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+#conteudo button:hover{
+    background-color: #2c2c2c;
+    color: #fff;
+
+}
+#conteudo1{
+    width: 100%;
+    height: calc(100% - 85px);
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+#conteudo1 h1{
+    width: 95%;
+    text-indent: 2.3em;
+    text-align: justify;
+    position: relative;
+    top: 20px;
+    left: 2.5%;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#conteudo1 p{
+    width: 95%;
+    text-indent: 2.3em;
+    text-align: justify;
+    position: relative;
+    top: 20px;
+    left: 2.5%;
+    font-weight: normal;
+    margin-top: 20px;
+}
+#conteudo1 a{
+    width: 95%;
+    text-indent: 2.3em;
+    text-align: justify;
+    position: relative;
+    top: 20px;
+    left: 2.5%;
+    font-weight: normal;
+    margin-top: 20px;
+}
+#fechar{
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+#proximo{
+    position: absolute;
+    bottom: 5px;
+    right: 5px
+}
+#voltar{
+    position: absolute;
+    bottom: 5px;
+    left: 5px
+}
+#page-xg table {
+    width: 1090px;
+    position: relative;
+    top: 70px;
+    left: calc(50% - 545px);
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+#page-xg th {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  background-color: #d3d3d3;
+}
+#page-xg td {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: normal;
+}
+#conteudo{
+    width: 98%;
+    height:98%;
+    position: absolute;
+    top:1%;
+    left: 1%;
+    z-index: 4;
+    background-color: rgb(255,255,255,0.9);
+    display: none;
+}
+#conteudo1 table {
+    width: 98%;
+    position: relative;
+    top: 70px;
+    left: 1%;
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+#conteudo1 th {
+    padding: 5px; 
+    border: 1px solid black;
+    text-align: left;
+    font-weight: bold;
+    background-color: #d3d3d3;
+}
+#conteudo1 td {
+    padding: 5px; 
+    border: 1px solid black;
+    text-align: left;
+    font-weight: normal;
+}
 
 @media(max-width: 1090px){
     #cabecalho_I, #rodape_I{
@@ -276,6 +454,10 @@ body {
     #page-home{
         width: 100%;
         left: 0px;
+    }
+    #page-msf{
+        width: 80%;
+        left: 10%;
     }
     #page-scrum{
         height: 850px;
@@ -305,6 +487,10 @@ body {
         height: 2000px;
         left: 0px;
     }
+    #page-xg{
+        height: 1500px;
+        left: 0px;
+    }
     #page-fdd p{
         width: 80%;
         left: 10%;
@@ -313,15 +499,15 @@ body {
         width: 80%;
         left: 10%;
     }
-    #page-xg{
-        height: 1230px;
-        left: 0px;
-    }
     #page-xg p{
         width: 80%;
         left: 10%;
     }
     #page-xg h1, #page-xg h2  {
+        width: 80%;
+        left: 10%;
+    }
+    #page-xg table{
         width: 80%;
         left: 10%;
     }
@@ -338,7 +524,12 @@ body {
     #page-fdd{
         height: 2200px;
         left: 0px;           
-    }   
+    } 
+    #page-xg{
+        height: 1550px;
+        left: 0px;
+    }
+
 }
 @media(max-width: 700px){
     #page-scrum{
@@ -353,6 +544,10 @@ body {
         height: 2450px;
         left: 0px;           
     } 
+    #page-xg{
+        height: 1650px;
+        left: 0px;
+    }
 }
 
 
@@ -377,6 +572,10 @@ body {
         height: 2670px;
         left: 0px;           
     }  
+    #page-xg{
+        height: 1700px;
+        left: 0px;
+    }
 
 }
 @media(max-width: 500px){
@@ -400,6 +599,10 @@ body {
         height: 3000px;
         left: 0px;           
     } 
+    #page-xg{
+        height: 1780px;
+        left: 0px;
+    }
 
 
 }
@@ -414,6 +617,10 @@ body {
     #page-fdd{
         height: 3400px;
         left: 0px;           
+    }
+    #page-xg{
+        height: 1980px;
+        left: 0px;
     } 
 
 
@@ -430,6 +637,10 @@ body {
         height: 3600px;
         left: 0px;           
     } 
+    #page-xg{
+        height: 2200px;
+        left: 0px;
+    }
 
 
 }
